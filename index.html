@@ -406,9 +406,16 @@
         }
 
         /* 响应式 */
-        @media (max-width: 768px) {
+       @media (max-width: 768px) {
     .header {
-        background-position: 40% center;
+        background-position: center center;
+    }
+    .header::before {
+        background: linear-gradient(
+            to bottom,
+            rgba(255,255,255,0.3) 0%,
+            rgba(255,255,255,0.55) 100%
+        );
     }
 }
         @media (max-width: 375px) {
