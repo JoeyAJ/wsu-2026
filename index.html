@@ -38,7 +38,7 @@
             background-color: #ffffff;
             background-image: url('wsu-banner.png');
             background-repeat: no-repeat;
-            background-position: 40% center;
+            background-position: left center;
             background-size: cover;
             padding: 2.5rem 1.5rem;
             text-align: center;
@@ -406,6 +406,11 @@
         }
 
         /* 响应式 */
+        @media (max-width: 768px) {
+    .header {
+        background-position: 40% center;
+    }
+}
         @media (max-width: 375px) {
             .logo {
                 font-size: 2rem;
